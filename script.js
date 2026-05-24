@@ -326,17 +326,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Initialize Canvas Particles
-document.addEventListener('DOMContentLoaded', () => {
-    if(document.getElementById('tsparticles') && typeof tsParticles !== 'undefined') {
-        tsParticles.load('tsparticles', {
-            preset: 'triangles',
-            background: { color: 'transparent' },
-            particles: {
-                color: { value: '#f97316' },
-                links: { color: '#cbd5e1', enable: true },
-                move: { enable: true, speed: 2 }
-            }
-        });
-    }
-});
+// Canvas particle animation removed to improve performance
+// tsParticles initialization disabled. If needed in the future, re-enable with a lightweight configuration.
