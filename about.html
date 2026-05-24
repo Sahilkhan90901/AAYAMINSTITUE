@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Aayam Computer Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body class="bg-slate-50 text-gray-700">
+
+    <header class="bg-white/95 backdrop-blur-md text-slate-900 border-b border-gray-200 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center shrink-0">
+                    <img src="images/aayam-logo.png" alt="AAYAM Logo" class="h-12 w-auto object-contain">
+                </a>
+                <div
+                    class="text-[10px] uppercase tracking-widest font-bold leading-tight hidden sm:block border-l border-gray-700 pl-3">
+                    Computer<br><span class="text-orange-500">Education</span>
+                </div>
+            </div>
+
+            <button id="mobile-menu-toggle" class="md:hidden text-slate-900 hover:text-orange-500 p-2 rounded-lg transition"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="index.html" class="text-gray-600 hover:text-orange-500 transition">Home</a>
+                <a href="about.html" class="text-orange-500 border-b-2 border-orange-500 pb-1">About</a>
+                <a href="courses.html" class="text-gray-600 hover:text-orange-500 transition">Courses</a>
+                <a href="blog.html" class="text-gray-600 hover:text-orange-500 transition">Blog</a>
+                <a href="contact.html" class="text-gray-600 hover:text-orange-500 transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-3">
+                <button class="text-gray-500 hover:text-orange-500 p-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button
+                    class="enroll-trigger bg-orange-500 hover:bg-orange-600 text-white shadow-md px-4 py-1.5 rounded text-sm font-bold transition btn-interactive">Apply
+                    Now</button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden border-t border-slate-700 bg-slate-50/95 backdrop-blur-sm">
+            <div class="max-w-7xl mx-auto px-4 py-4 space-y-4">
+                <nav class="grid gap-3 text-sm font-semibold">
+                    <a href="index.html" class="text-blue-300 hover:text-orange-500 transition">Home</a>
+                    <a href="about.html" class="text-slate-900 transition">About</a>
+                    <a href="courses.html" class="text-gray-600 hover:text-orange-500 transition">Courses</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-orange-500 transition">Blog</a>
+                <a href="contact.html" class="text-gray-600 hover:text-orange-500 transition">Contact</a>
+                </nav>
+                <div class="flex flex-col gap-2">
+                    <button
+                        class="enroll-trigger w-full bg-orange-500 hover:bg-orange-600 text-white shadow-md px-4 py-2 rounded text-sm font-bold transition btn-interactive">Apply
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-10">
+
+        <div class="w-full rounded-3xl overflow-hidden shadow-2xl mb-16 relative h-64 sm:h-80 lg:h-96 group">
+            <img src="images/about_campus_1779542153533.png" alt="Aayam Computer Education Campus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center">
+                <h2 class="text-white text-3xl sm:text-5xl font-black drop-shadow-lg tracking-wider">Welcome to <span class="text-orange-500">Aayam</span></h2>
+            </div>
+        </div>
+
+        <div class="space-y-16">
+        <section class="grid gap-10 lg:grid-cols-2 items-center">
+            <div class="space-y-6">
+                <span
+                    class="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-widest text-orange-500">About
+                    Aayam</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900">Learn the skills that top employers seek.
+                </h1>
+                <p class="text-base leading-8 text-gray-500 max-w-xl">Aayam Computer Education, is one of the leading institutes in Sikar, Rajasthan. We provide quality education with practical training and career
+                    roadmaps to make students fully industry-ready.</p>
+                <div class="flex flex-col gap-3 sm:flex-row">
+                    <a href="courses.html"
+                        class="inline-flex items-center justify-center rounded-xl bg-orange-500 text-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg hover:bg-blue-700 transition">View
+                        Courses</a>
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white border-gray-100 shadow-sm hover:shadow-md px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100 transition">Contact
+                        Admissions</a>
+                </div>
+
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-3xl bg-white border-gray-100 shadow-sm hover:shadow-md p-6 shadow-2xl shadow-black/50 border border-gray-200">
+                    <h3 class="text-3xl font-black text-orange-500">10+</h3>
+                    <p class="mt-2 text-sm text-slate-500">Years of excellence in computer education.</p>
+                </div>
+                <div class="rounded-3xl bg-orange-500 text-white p-6 shadow-lg text-slate-900">
+                    <h3 class="text-3xl font-black">2500+</h3>
+                    <p class="mt-2 text-sm text-slate-900/80">Students trained with real-world projects.</p>
+                </div>
+                <div class="rounded-3xl bg-white border-gray-100 shadow-sm hover:shadow-md p-6 shadow-2xl shadow-black/50 border border-gray-200">
+                    <h3 class="text-3xl font-black text-slate-900">95%</h3>
+                    <p class="mt-2 text-sm text-slate-500">Placement support success for our learners.</p>
+                </div>
+                <div class="rounded-3xl bg-white border-gray-100 shadow-sm hover:shadow-md p-6 shadow-2xl shadow-black/50 border border-gray-200">
+                    <h3 class="text-3xl font-black text-orange-500">100+</h3>
+                    <p class="mt-2 text-sm text-slate-500">Courses designed for modern careers.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-3xl bg-white border-gray-100 shadow-sm hover:shadow-md p-6 shadow-2xl shadow-black/50 border border-gray-200">
+                <h3 class="text-lg font-bold text-slate-900">Expert Faculty</h3>
+                <p class="mt-3 text-sm text-gray-500">Experienced and certified trainers guiding every batch.</p>
+            </div>
+            <div class="rounded-3xl bg-white border-gray-100 shadow-sm hover:shadow-md p-6 shadow-2xl shadow-black/50 border border-gray-200">
+                <h3 class="text-lg font-bold text-slate-900">Practical Learning</h3>
+                <p class="mt-3 text-sm text-gray-500">Hands-on projects and lab sessions for every skill.</p>
+            </div>
+            <div class="rounded-3xl bg-white border-gray-100 shadow-sm hover:shadow-md p-6 shadow-2xl shadow-black/50 border border-gray-200">
+                <h3 class="text-lg font-bold text-slate-900">Small Batches</h3>
+                <p class="mt-3 text-sm text-gray-500">Personal attention with focused mentorship in every batch.</p>
+            </div>
+            <div class="rounded-3xl bg-white border-gray-100 shadow-sm hover:shadow-md p-6 shadow-2xl shadow-black/50 border border-gray-200">
+                <h3 class="text-lg font-bold text-slate-900">Career Support</h3>
+                <p class="mt-3 text-sm text-gray-500">Placement guidance and job-ready skills for students.</p>
+            </div>
+        </section>
+    
+        <section class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-gray-100 mt-16 space-y-12">
+            
+            <div class="space-y-6 text-slate-700 leading-relaxed">
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fa-solid fa-building-columns text-orange-500 text-3xl"></i>
+                    <h2 class="text-3xl font-extrabold text-slate-900">Welcome to Aayam Computer Education!</h2>
+                </div>
+                <p>Welcome to Aayam Computer Education, your trusted destination for professional computer training and skill development in Sikar. We are committed to helping students, beginners, and professionals build successful careers by providing practical learning and industry-focused training programs. Our goal is to bridge the gap between education and real-world skills by preparing students for modern industries and future opportunities.</p>
+                <p>At Aayam Computer Education, we believe learning should go beyond theory. Our experienced trainers focus on practical implementation, live projects, and hands-on sessions that help students gain confidence and develop job-ready skills. We provide training using modern technologies and the latest software tools to ensure students stay updated with industry trends.</p>
+                <p>We offer training in a wide range of fields including Architecture Design Software, Programming, Web Development, App Development, Graphic Design, Digital Marketing, Office Automation, and Professional Computer Skills.</p>
+                <p class="font-bold text-slate-800">With career guidance, project-based learning, and a student-friendly environment, we are here to support your learning journey from the first class to career success.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 border-t border-gray-100 pt-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-bullseye text-orange-500"></i> Our Mission</h3>
+                    <p class="text-slate-700">Our mission is to empower students with practical skills and technical knowledge that help them succeed in today's fast-changing digital world. We are dedicated to delivering quality education, modern training methods, and real-world experience to help students achieve their career goals.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-eye text-orange-500"></i> Our Vision</h3>
+                    <p class="text-slate-700">Our vision is to become one of the leading computer education institutes in Rajasthan by providing high-quality training, practical learning opportunities, and skill-based education that creates future professionals.</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-12">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2"><i class="fa-solid fa-chalkboard-user text-orange-500"></i> Our Training & Career Support</h3>
+                <p class="text-slate-700 mb-6">At Aayam Computer Education, our focus is not only on teaching skills but also on preparing students for their professional journey. We provide practical exposure and personalized guidance to help learners become industry-ready.</p>
+                
+                <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl">
+                    <p class="font-bold text-slate-800 mb-4">Our career support includes:</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm font-semibold text-slate-700">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Practical hands-on training</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Live projects and assignments</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Resume building guidance</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Interview preparation</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Career counseling</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Personality development</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Placement assistance</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Workshops & skill sessions</div>
+                    </div>
+                </div>
+                <p class="text-slate-700 mt-6 italic">We continuously work to ensure students gain both technical knowledge and professional confidence.</p>
+            </div>
+
+            <div class="border-t border-gray-100 pt-12">
+                <h3 class="text-2xl font-bold text-slate-900 mb-8 text-center">Our Courses</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-orange-50/50 p-6 rounded-xl border border-orange-100">
+                        <h4 class="font-black text-orange-600 mb-3 uppercase tracking-wide text-sm border-b border-orange-200 pb-2">Architecture & Design</h4>
+                        <ul class="space-y-2 text-sm text-slate-700 font-medium">
+                            <li><i class="fa-solid fa-angle-right text-orange-400 mr-2"></i>AutoCAD for Civil / Architects</li>
+                            <li><i class="fa-solid fa-angle-right text-orange-400 mr-2"></i>3Ds Max</li>
+                            <li><i class="fa-solid fa-angle-right text-orange-400 mr-2"></i>Google SketchUp</li>
+                            <li><i class="fa-solid fa-angle-right text-orange-400 mr-2"></i>V-Ray</li>
+                            <li><i class="fa-solid fa-angle-right text-orange-400 mr-2"></i>Interior & Exterior Design</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50/50 p-6 rounded-xl border border-blue-100">
+                        <h4 class="font-black text-blue-600 mb-3 uppercase tracking-wide text-sm border-b border-blue-200 pb-2">Programming & Dev</h4>
+                        <ul class="space-y-2 text-sm text-slate-700 font-medium">
+                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>Full Stack Dev (MEAN/MERN)</li>
+                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>Android & IOS App Dev</li>
+                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>Python for Professionals</li>
+                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>Java for Professionals</li>
+                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>C & C++ Programming</li>
+                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="bg-emerald-50/50 p-6 rounded-xl border border-emerald-100">
+                        <h4 class="font-black text-emerald-600 mb-3 uppercase tracking-wide text-sm border-b border-emerald-200 pb-2">Professional IT Courses</h4>
+                        <ul class="space-y-2 text-sm text-slate-700 font-medium">
+                            <li><i class="fa-solid fa-angle-right text-emerald-400 mr-2"></i>Graphic Design</li>
+                            <li><i class="fa-solid fa-angle-right text-emerald-400 mr-2"></i>Data Analytics</li>
+                            <li><i class="fa-solid fa-angle-right text-emerald-400 mr-2"></i>Digital Marketing</li>
+                            <li><i class="fa-solid fa-angle-right text-emerald-400 mr-2"></i>Tally Prime & Adv Excel</li>
+                            <li><i class="fa-solid fa-angle-right text-emerald-400 mr-2"></i>MS Word</li>
+                            <li><i class="fa-solid fa-angle-right text-emerald-400 mr-2"></i>DCA / PGDCA & RS-CIT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-12">
+                <h3 class="text-2xl font-bold text-slate-900 mb-8 text-center">Why Choose Us?</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-orange-100 text-orange-500 w-10 h-10 rounded-full flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Experienced Trainers</h4>
+                            <p class="text-sm text-slate-600 mt-1">Our trainers provide practical and industry-focused guidance to help students understand concepts clearly.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-orange-100 text-orange-500 w-10 h-10 rounded-full flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-desktop"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Modern Learning Environment</h4>
+                            <p class="text-sm text-slate-600 mt-1">We provide access to updated software tools and technology for better learning experiences.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-orange-100 text-orange-500 w-10 h-10 rounded-full flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Practical Learning Approach</h4>
+                            <p class="text-sm text-slate-600 mt-1">Students work on projects and real-world examples to build confidence and skills.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-orange-100 text-orange-500 w-10 h-10 rounded-full flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-briefcase"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Career Guidance & Placement Support</h4>
+                            <p class="text-sm text-slate-600 mt-1">We help students prepare for future opportunities through guidance and support.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-orange-100 text-orange-500 w-10 h-10 rounded-full flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Flexible Learning Options</h4>
+                            <p class="text-sm text-slate-600 mt-1">We provide flexible schedules suitable for school students, college students, and working professionals.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10 bg-slate-900 p-6 rounded-2xl text-center shadow-lg">
+                    <p class="text-white font-medium">Aayam Computer Education is dedicated to helping students learn, grow, and build successful careers with practical knowledge and modern skills.</p>
+                </div>
+            </div>
+
+        </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-gray-400 text-xs pt-16 pb-8 px-4 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 py-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="space-y-4">
+                <a href="index.html" class="inline-block">
+                    <img src="images/aayam-logo.png" alt="AAYAM Logo" class="h-14 w-auto object-contain">
+                </a>
+                <p class="text-sm leading-relaxed">Empowering students with quality education and practical skills for a
+                    better tomorrow.</p>
+                <div class="flex space-x-3 text-base text-gray-400">
+                    <a href="#" class="hover:text-orange-500"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-red-500"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-orange-500"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-sm font-bold uppercase tracking-widest text-white">Quick Links</h4>
+                <ul class="space-y-2 text-sm font-semibold text-slate-300">
+                    <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+                    <li><a href="about.html" class="hover:text-orange-500">About Us</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500">Courses</a></li>
+                    <li><a href="contact.html" class="hover:text-orange-500">Contact</a></li>
+                </ul>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-sm font-bold uppercase tracking-widest text-white">Our Courses</h4>
+                <ul class="space-y-2 text-sm font-semibold text-slate-300">
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">AutoCAD (Civil/Architects)</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Full Stack Development</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Python Programming</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Graphic Design</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Digital Marketing</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Tally Prime</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">RS-CIT & MS-Office</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">DCA & PGDCA</a></li>
+</ul>
+            </div>
+            <div class="space-y-3 text-sm text-slate-300">
+                <h4 class="text-sm font-bold uppercase tracking-widest text-white">Contact Us</h4>
+                <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-orange-500"></i>8104479959</p>
+                <p class="flex items-center gap-2"><i
+                        class="fa-solid fa-envelope text-orange-500"></i>aakashjoshi0001@gmail.com</p>
+                <p class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-orange-500 mt-0.5"></i>Aayam Institute, Nawalgarh Rd, Sikar, Rajasthan</p>
+                <p class="flex items-center gap-2"><i class="fa-solid fa-clock text-orange-500"></i>Mon - Sat: 9:00 AM -
+                    7:00 PM</p>
+            </div>
+
+
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 py-6 border-t border-slate-800 text-[11px] text-gray-500 flex flex-col gap-3 sm:flex-row justify-between">
+            <p>&copy; 2026 Aayam Computer Education. All Rights Reserved.</p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================== -->
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <!-- ========================================================================== -->
+
+
+    <div
+        class="fixed bottom-5 left-5 bg-emerald-500 text-slate-900 w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-xl cursor-pointer hover:bg-emerald-600 transition-transform transform hover:scale-110 active:scale-95 z-40">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+
+    <!-- Global Enrollment Form Modal -->
+    <div id="enrollModal" class="fixed inset-0 z-[100] flex items-center justify-center hidden">
+        <div class="modal-overlay absolute inset-0 bg-slate-900/80 backdrop-blur-sm cursor-pointer"></div>
+        <div
+            class="modal-content relative bg-white border-gray-100 shadow-sm hover:shadow-md w-[90%] max-w-md rounded-2xl shadow-2xl p-6 sm:p-8 flex flex-col transform scale-95 opacity-0 transition-all duration-300">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-red-500 transition text-xl"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-black text-slate-900 mb-2">Enroll <span class="text-orange-500">Now</span></h2>
+            <p class="text-xs text-gray-500 mb-6">Fill out the form below and our team will contact you shortly.</p>
+
+            <form id="enrollForm" class="space-y-4">
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-600 mb-1">Full Name</label>
+                    <input type="text" name="user_name" required
+                        class="w-full border border-gray-300 bg-white text-slate-900 focus:ring-pink-500 focus:border-orange-500 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-orange-500 outline-none transition"
+                        placeholder="John Doe">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-600 mb-1">Phone Number</label>
+                    <input type="tel" name="user_phone" required
+                        class="w-full border border-gray-300 bg-white text-slate-900 focus:ring-pink-500 focus:border-orange-500 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-orange-500 outline-none transition"
+                        placeholder="+91 XXXXX XXXXX">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-600 mb-1">Email Address</label>
+                    <input type="email" name="user_email" required
+                        class="w-full border border-gray-300 bg-white text-slate-900 focus:ring-pink-500 focus:border-orange-500 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-orange-500 outline-none transition"
+                        placeholder="john@example.com">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-600 mb-1">Course of Interest</label>
+                    <select name="course_interest" required
+                        class="w-full border border-gray-300 bg-white text-slate-900 focus:ring-pink-500 focus:border-orange-500 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-orange-500 outline-none transition bg-white border-gray-100 shadow-sm hover:shadow-md">
+                        <option value="" disabled selected>Select a course</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence & ML</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Full Stack Development">Full Stack Web Development</option>
+                        <option value="Digital Marketing">Digital Marketing & SEO</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="AutoCAD">AutoCAD</option>
+                        <option value="Python">Python Programming</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Tally">Tally Prime</option>
+                        <option value="DCA">DCA</option>
+                        <option value="App Development">Mobile App Development</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" id="enrollSubmitBtn"
+                    class="w-full bg-orange-500 hover:bg-orange-600 text-white shadow-md font-bold py-3 rounded-lg transition shadow-lg mt-2 flex justify-center items-center btn-interactive">
+                    <span>Submit Form</span>
+                    <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                </button>
+                <div id="formFeedback" class="text-xs text-center font-bold hidden"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

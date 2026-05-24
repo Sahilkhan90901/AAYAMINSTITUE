@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayam Computer Education - Sikar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/tsparticles-preset-triangles@2/tsparticles.preset.triangles.bundle.min.js"></script>
+</head>
+
+<body class="bg-slate-50 text-gray-700 font-sans antialiased relative">
+
+    <header class="bg-white/95 backdrop-blur-md text-slate-900 border-b border-gray-200 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center shrink-0">
+                    <img src="images/aayam-logo.png" alt="AAYAM Logo" class="h-12 w-auto object-contain">
+                </a>
+                <div
+                    class="text-[10px] uppercase tracking-widest font-bold leading-tight hidden sm:block border-l border-gray-700 pl-3">
+                    Computer<br><span class="text-orange-500">Education</span>
+                </div>
+            </div>
+
+            <button id="mobile-menu-toggle"
+                class="md:hidden text-slate-900 hover:text-orange-500 p-2 rounded-lg transition-transform transform active:scale-95">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="index.html" class="text-orange-500 border-b-2 border-orange-500 pb-1">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-orange-500 transition">About</a>
+                <a href="courses.html" class="text-gray-600 hover:text-orange-500 transition">Courses</a>
+                <a href="blog.html" class="text-gray-600 hover:text-orange-500 transition">Blog</a>
+                <a href="contact.html" class="text-gray-600 hover:text-orange-500 transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-3">
+                <button
+                    class="text-gray-500 hover:text-orange-500 p-2 transition-transform transform hover:scale-110 active:scale-95"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <button
+                    class="enroll-trigger bg-orange-500 hover:bg-orange-600 text-white shadow-md px-4 py-1.5 rounded text-sm font-bold transition btn-interactive">Apply
+                    Now</button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="md:hidden hidden border-t border-slate-700 bg-slate-50/95 backdrop-blur-sm absolute w-full left-0 top-full shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 py-4 space-y-4">
+                <nav class="grid gap-3 text-sm font-semibold">
+                    <a href="index.html" class="text-blue-300 hover:text-orange-500 transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-orange-500 transition">About</a>
+                    <a href="courses.html" class="text-gray-600 hover:text-orange-500 transition">Courses</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-orange-500 transition">Blog</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-orange-500 transition">Contact</a>
+                </nav>
+                <div class="flex flex-col gap-2">
+                    <button
+                        class="enroll-trigger w-full bg-orange-500 hover:bg-orange-600 text-white shadow-md px-4 py-2 rounded text-sm font-bold transition btn-interactive">Apply
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-slate-50 text-slate-900 relative overflow-hidden py-20 px-4 min-h-[600px] flex items-center">
+        <!-- Canvas Particles Background -->
+        <div id="tsparticles" class="absolute inset-0 z-0"></div>
+
+
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6">
+                <span
+                    class="inline-flex items-center space-x-2 bg-orange-100 text-orange-600 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-orange-200">
+                    <i class="fa-solid fa-star text-yellow-400"></i> <span>Best Computer Education in Sikar</span>
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    Learn Today,<br><span class="text-orange-500">Lead
+                        Tomorrow</span>
+                </h1>
+                <p class="text-gray-600 text-base sm:text-lg max-w-xl font-medium">
+                    Expert Faculty, Practical Training and Career Support to Build Your Successful Future.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <button
+                        class="enroll-trigger bg-orange-500 text-white hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded-lg transition flex items-center space-x-2 shadow-[0_0_20px_rgba(37,99,235,0.4)] btn-interactive">
+                        <span>Explore Courses</span> <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </button>
+                    <button
+                        class="enroll-trigger bg-white border-gray-100 shadow-sm hover:shadow-md text-[#061329] hover:bg-gray-100 font-bold px-7 py-3.5 rounded-lg transition shadow-lg btn-interactive">
+                        Admission Open
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-gray-800/80">
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="bg-blue-950/60 p-3 rounded-xl text-orange-500 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
+                            <i class="fa-solid fa-user-tie text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold">Expert Faculty</h4>
+                            <p class="text-xs text-gray-500">10+ Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="bg-blue-950/60 p-3 rounded-xl text-orange-500 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
+                            <i class="fa-solid fa-laptop-code text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold">Practical Learning</h4>
+                            <p class="text-xs text-gray-500">Live Projects</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="bg-blue-950/60 p-3 rounded-xl text-orange-500 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
+                            <i class="fa-solid fa-briefcase text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold">Placement Support</h4>
+                            <p class="text-xs text-gray-500">Career Assistance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex justify-center items-center relative hidden md:flex">
+                <div
+                    class="w-full max-w-md bg-slate-900 border border-slate-800 p-5 rounded-3xl shadow-2xl relative overflow-hidden card-tilt text-left">
+                    <!-- Mac Window Buttons -->
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
+                        <div class="flex space-x-2">
+                            <span
+                                class="w-3 h-3 rounded-full bg-red-500 inline-block shadow-[0_0_8px_rgba(239,68,68,0.5)]"></span>
+                            <span
+                                class="w-3 h-3 rounded-full bg-yellow-500 inline-block shadow-[0_0_8px_rgba(245,158,11,0.5)]"></span>
+                            <span
+                                class="w-3 h-3 rounded-full bg-emerald-500 inline-block shadow-[0_0_8px_rgba(16,185,129,0.5)]"></span>
+                        </div>
+                        <span
+                            class="text-slate-500 text-[10px] font-mono select-none uppercase tracking-wider">aayam_lab_playground</span>
+                        <div class="w-8"></div>
+                    </div>
+
+                    <!-- Interactive Tabs -->
+                    <div class="flex space-x-1 mb-4 border-b border-slate-800/80 pb-2">
+                        <button onclick="switchPlaygroundTab('code')" id="tab-code"
+                            class="tab-btn bg-slate-800 text-orange-400 border border-slate-700 px-3 py-1.5 rounded-lg text-xs font-mono font-bold flex items-center gap-1.5 transition">
+                            <i class="fa-brands fa-python text-yellow-400"></i> career.py
+                        </button>
+                        <button onclick="switchPlaygroundTab('cad')" id="tab-cad"
+                            class="tab-btn text-slate-400 hover:text-slate-300 px-3 py-1.5 rounded-lg text-xs font-mono font-bold flex items-center gap-1.5 transition">
+                            <i class="fa-solid fa-drafting-compass text-sky-400"></i> layout.dwg
+                        </button>
+                        <button onclick="switchPlaygroundTab('accounting')" id="tab-accounting"
+                            class="tab-btn text-slate-400 hover:text-slate-300 px-3 py-1.5 rounded-lg text-xs font-mono font-bold flex items-center gap-1.5 transition">
+                            <i class="fa-solid fa-file-invoice text-emerald-400"></i> tally.dat
+                        </button>
+                    </div>
+
+                    <!-- Editor Screen Container -->
+                    <div class="font-mono text-xs leading-relaxed min-h-[170px] relative select-none">
+                        <!-- Python Content -->
+                        <div id="content-code" class="tab-content text-slate-300 space-y-1.5">
+                            <p class="text-slate-500"># Aayam Career Engine v2.0</p>
+                            <p><span class="text-pink-500">def</span> <span
+                                    class="text-blue-400">build_career</span>(student):</p>
+                            <p class="pl-4">skills = [<span class="text-emerald-400">'Python'</span>, <span
+                                    class="text-emerald-400">'FullStack'</span>, <span
+                                    class="text-emerald-400">'AI'</span>]</p>
+                            <p class="pl-4">practice_level = <span class="text-amber-500">100</span> <span
+                                    class="text-slate-500"># 100% Practical</span></p>
+                            <p class="pl-4">career_ready = student.learn(skills, practice_level)</p>
+                            <p class="pl-4"><span class="text-pink-500">return</span> <span
+                                    class="text-emerald-400">"SUCCESSFUL FUTURE 🚀"</span></p>
+
+                            <div
+                                class="mt-4 p-3 bg-slate-950/80 rounded-xl border border-slate-800 text-[10px] text-gray-400">
+                                <span class="text-emerald-400 font-bold">$</span> python career.py<br>
+                                <span class="text-yellow-400">>> ready_to_hire: True [100% Placement Support]</span>
+                            </div>
+                        </div>
+
+                        <!-- CAD Content -->
+                        <div id="content-cad" class="tab-content text-slate-300 space-y-1.5 hidden">
+                            <p class="text-slate-500">; AutoCAD Architectural Layer</p>
+                            <p><span class="text-blue-400">DRAW_MODEL</span> = <span
+                                    class="text-emerald-400">"Civil_2D_3D"</span></p>
+                            <p><span class="text-blue-400">RENDER_ENGINE</span> = <span class="text-emerald-400">"V-Ray
+                                    & Lumion"</span></p>
+                            <p><span class="text-pink-500">IF</span> status == <span
+                                    class="text-emerald-400">"Designing"</span>:</p>
+                            <p class="pl-4">apply_drafting_standards()</p>
+                            <p class="pl-4">render_photorealistic(V_Ray)</p>
+
+                            <div
+                                class="mt-4 p-3 bg-slate-950/80 rounded-xl border border-slate-800 text-[10px] text-gray-400">
+                                <span class="text-sky-400 font-bold">$</span> render --view blueprint.dwg<br>
+                                <span class="text-emerald-400">>> Status: 100% Architect Blueprint Approved! 📐</span>
+                            </div>
+                        </div>
+
+                        <!-- Tally Content -->
+                        <div id="content-accounting" class="tab-content text-slate-300 space-y-1.5 hidden">
+                            <p class="text-slate-500"># Tally Prime & Taxation Database</p>
+                            <p><span class="text-pink-500">import</span> accounting_vault</p>
+                            <p>ledger = accounting_vault.load(<span class="text-emerald-400">"2026_ledger"</span>)</p>
+                            <p>ledger.process_invoices(type=<span class="text-emerald-400">"GST_Voucher"</span>)</p>
+                            <p>ledger.generate_balance_sheets()</p>
+                            <p>ledger.audit()</p>
+
+                            <div
+                                class="mt-4 p-3 bg-slate-950/80 rounded-xl border border-slate-800 text-[10px] text-gray-400">
+                                <span class="text-emerald-400 font-bold">$</span> tally --verify tax_audit<br>
+                                <span class="text-emerald-400">>> Audit Successful. Clean balance sheet! 💼</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative back light glow -->
+                    <div
+                        class="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-500/10 rounded-full blur-2xl pointer-events-none">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="enroll-trigger absolute right-0 top-1/3 bg-yellow-400 text-slate-950 font-bold text-xs uppercase tracking-widest py-5 px-2 rounded-l-md shadow-lg cursor-pointer transform origin-right hidden md:block hover:-translate-x-1 transition vertical-text writing-mode-vertical z-20 hover:bg-yellow-300">
+            <i class="fa-solid fa-phone mr-1 rotate-90 inline-block align-middle"></i> ENQUIRE NOW
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-white border-gray-100 shadow-sm hover:shadow-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <!-- High-Paying Tech Careers -->
+            <div>
+                <div class="mb-8">
+                    <h2 class="text-2xl font-black text-slate-950 flex items-center space-x-3">
+                        <span
+                            class="bg-orange-500 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs">1</span>
+                        <span>For High-Paying Tech Careers</span>
+                    </h2>
+                    <p class="text-xs text-gray-500 mt-1 pl-10">Advanced industrial roles with top-tier salary
+                        benchmarks.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pl-0 md:pl-10">
+                    <!-- Cards -->
+                    <div
+                        class="border border-blue-100 bg-white/20 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="text-orange-500 text-2xl mb-3 group-hover:scale-110 transition-transform origin-left">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-slate-950 mb-1.5">Artificial Intelligence & ML</h3>
+                            <p class="text-xs text-gray-500 leading-relaxed mb-4">Focuses on creating intelligent
+                                systems, robotics, and complex natural language processing models.</p>
+                        </div>
+                        <button
+                            class="view-details-btn text-orange-500 font-bold text-xs hover:text-blue-800 transition flex items-center mt-auto"
+                            data-course="ai">
+                            View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+                        </button>
+                    </div>
+                    <div
+                        class="border border-blue-100 bg-white/20 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="text-orange-500 text-2xl mb-3 group-hover:scale-110 transition-transform origin-left">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-slate-950 mb-1.5">Data Science & Analytics</h3>
+                            <p class="text-xs text-gray-500 leading-relaxed mb-4">Ideal for those who love numbers;
+                                extracting insights from datasets to drive business decisions.</p>
+                        </div>
+                        <button
+                            class="view-details-btn text-orange-500 font-bold text-xs hover:text-blue-800 transition flex items-center mt-auto"
+                            data-course="data_science">
+                            View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+                        </button>
+                    </div>
+                    <div
+                        class="border border-blue-100 bg-white/20 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="text-orange-500 text-2xl mb-3 group-hover:scale-110 transition-transform origin-left">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-slate-950 mb-1.5">Cloud Computing</h3>
+                            <p class="text-xs text-gray-500 leading-relaxed mb-4">Teaches you to manage and architect
+                                scalable infrastructure on platforms like AWS or Azure.</p>
+                        </div>
+                        <button
+                            class="view-details-btn text-orange-500 font-bold text-xs hover:text-blue-800 transition flex items-center mt-auto"
+                            data-course="cloud">
+                            View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Freelancing Careers -->
+            <div>
+                <div class="mb-8">
+                    <h2 class="text-2xl font-black text-slate-950 flex items-center space-x-3">
+                        <span
+                            class="bg-emerald-600 text-slate-900 w-7 h-7 rounded-full flex items-center justify-center text-xs">2</span>
+                        <span>For Quick Job Entry & Freelancing</span>
+                    </h2>
+                    <p class="text-xs text-gray-500 mt-1 pl-10">Perfect frameworks for fast deployment into digital
+                        marketplaces or remote roles.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pl-0 md:pl-10">
+                    <!-- Cards -->
+                    <div
+                        class="border border-emerald-100 bg-emerald-50/10 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="text-emerald-600 text-2xl mb-3 group-hover:scale-110 transition-transform origin-left">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-slate-950 mb-1.5">Full-Stack Web Development</h3>
+                            <p class="text-xs text-gray-500 leading-relaxed mb-4">Front-end (UI/UX, HTML, JS) and
+                                back-end (databases, server logic) to build functional systems.</p>
+                        </div>
+                        <button
+                            class="view-details-btn text-emerald-600 font-bold text-xs hover:text-emerald-800 transition flex items-center mt-auto"
+                            data-course="fullstack">
+                            View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+                        </button>
+                    </div>
+                    <div
+                        class="border border-emerald-100 bg-emerald-50/10 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="text-emerald-600 text-2xl mb-3 group-hover:scale-110 transition-transform origin-left">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-slate-950 mb-1.5">Digital Marketing & SEO</h3>
+                            <p class="text-xs text-gray-500 leading-relaxed mb-4">Focuses on SEO strategies, social
+                                media execution, and online brand management.</p>
+                        </div>
+                        <button
+                            class="view-details-btn text-emerald-600 font-bold text-xs hover:text-emerald-800 transition flex items-center mt-auto"
+                            data-course="marketing">
+                            View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+                        </button>
+                    </div>
+                    <div
+                        class="border border-emerald-100 bg-emerald-50/10 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="text-emerald-600 text-2xl mb-3 group-hover:scale-110 transition-transform origin-left">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-slate-950 mb-1.5">UI/UX Design</h3>
+                            <p class="text-xs text-gray-500 leading-relaxed mb-4">Blends visual creativity with
+                                technology to design user-friendly interfaces.</p>
+                        </div>
+                        <button
+                            class="view-details-btn text-emerald-600 font-bold text-xs hover:text-emerald-800 transition flex items-center mt-auto"
+                            data-course="uiux">
+                            View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Our <span
+                        class="text-orange-500">Popular</span> Courses</h2>
+                <div class="w-16 h-1 bg-orange-500 text-white mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Course Cards -->
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-red-50 rounded-xl flex items-center justify-center text-red-500 text-4xl font-black mb-4 group-hover:bg-red-500 group-hover:text-orange-500 transition-colors duration-300">
+                            AutoCAD</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">AutoCAD</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Master 2D & 3D drafting, designing and modeling.</p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-red-50 text-red-600 font-bold text-[11px] py-2 rounded transition"
+                        data-course="autocad">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-white rounded-xl flex items-center justify-center text-orange-500 text-5xl mb-4 group-hover:bg-orange-500 text-white group-hover:text-orange-500 transition-colors duration-300">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Python Programming</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Learn Python from basics to advanced levels.</p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-white text-orange-500 font-bold text-[11px] py-2 rounded transition"
+                        data-course="python">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 text-2xl font-mono font-bold mb-4 group-hover:bg-indigo-600 group-hover:text-orange-500 transition-colors duration-300">
+                            JS / node</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Full Stack Development</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Build modern web apps with MERN / MEAN stack.</p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-indigo-50 text-indigo-600 font-bold text-[11px] py-2 rounded transition"
+                        data-course="fullstack">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-3xl font-bold mb-4 group-hover:bg-orange-500 group-hover:text-orange-500 transition-colors duration-300">
+                            Ps Ai</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Graphic Design</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Learn Photoshop, Illustrator and CorelDRAW.</p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-orange-50 text-orange-600 font-bold text-[11px] py-2 rounded transition"
+                        data-course="graphic">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-cyan-50 rounded-xl flex items-center justify-center text-cyan-600 text-4xl mb-4 group-hover:bg-cyan-600 group-hover:text-orange-500 transition-colors duration-300">
+                            <i class="fa-solid fa-display"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Web Design</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Create beautiful & responsive websites seamlessly.</p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-cyan-50 text-cyan-600 font-bold text-[11px] py-2 rounded transition"
+                        data-course="webdesign">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-white rounded-xl flex items-center justify-center text-orange-500 text-4xl mb-4 group-hover:bg-blue-700 group-hover:text-orange-500 transition-colors duration-300">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Data Science</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Data analysis, visualization and machine learning.</p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-white text-orange-500 font-bold text-[11px] py-2 rounded transition"
+                        data-course="data_science">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 text-4xl mb-4 group-hover:bg-purple-600 group-hover:text-orange-500 transition-colors duration-300">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Digital Marketing</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">SEO, Social Media, Google Ads & more marketing sets.
+                        </p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-purple-50 text-purple-600 font-bold text-[11px] py-2 rounded transition"
+                        data-course="marketing">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-2xl font-serif font-bold italic mb-4 group-hover:bg-emerald-600 group-hover:text-orange-500 transition-colors duration-300">
+                            Tally</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Tally Prime</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Learn accounting, GST, inventory & invoicing reports.
+                        </p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-emerald-50 text-emerald-600 font-bold text-[11px] py-2 rounded transition"
+                        data-course="tally">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-slate-100 rounded-xl flex items-center justify-center text-gray-600 text-3xl font-extrabold mb-4 group-hover:bg-slate-700 group-hover:text-orange-500 transition-colors duration-300">
+                            DCA</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">DCA</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Basic computers, MS Office suite apps and windows
+                            tools.</p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-slate-200 text-gray-600 font-bold text-[11px] py-2 rounded transition"
+                        data-course="dca">View Details</button>
+                </div>
+
+                <div
+                    class="course-card bg-white border-gray-100 shadow-sm hover:shadow-md rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 p-5 flex flex-col justify-between group transform hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="h-32 bg-white rounded-xl flex items-center justify-center text-zinc-700 text-4xl mb-4 group-hover:bg-zinc-700 group-hover:text-orange-500 transition-colors duration-300">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Mobile App Dev</h3>
+                        <p class="text-[11px] text-gray-500 mb-3">Build Android & iOS application infrastructures.</p>
+                    </div>
+                    <button
+                        class="view-details-btn w-full bg-white hover:bg-zinc-200 text-zinc-700 font-bold text-[11px] py-2 rounded transition"
+                        data-course="appdev">View Details</button>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 flex flex-col items-center gap-6">
+                <a href="courses.html"
+                    class="border-2 border-orange-500 text-orange-500 font-bold px-8 py-2.5 rounded hover:bg-orange-500 hover:text-white transition inline-flex items-center space-x-2 text-sm btn-interactive">
+                    <span>View All Courses</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+
+                <div
+                    class="w-full max-w-2xl bg-white border border-blue-200 rounded-2xl p-6 text-center shadow-sm mt-4">
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Looking for something else?</h3>
+                    <p class="text-sm text-gray-500 mb-4 font-medium">For more courses details, please contact us.</p>
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white shadow-md font-bold px-6 py-2.5 rounded-lg transition shadow-md btn-interactive">
+                        Contact Us <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-white border-gray-100 shadow-sm hover:shadow-md">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-4 relative group cursor-pointer overflow-hidden rounded-xl shadow-lg h-72">
+                <!-- Using Generated Campus Image -->
+                <img src="images/about_campus_1779542153533.png" alt="Aayam Campus"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent flex flex-col justify-end p-6">
+                    <div
+                        class="z-10 bg-orange-500 text-white px-3 py-1 rounded text-[10px] w-max font-bold text-slate-900 mb-2 shadow-md">
+                        AAYAM BUILDING VIEW</div>
+                    <div class="z-10 text-left">
+                        <h4 class="font-bold text-base text-slate-900">Sikar Main Road Facility</h4>
+                        <p class="text-xs text-gray-600">High-tech computer lab configurations</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-orange-500">About Us</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">Why Choose <span class="text-orange-500">Aayam
+                        Computer
+                        Education?</span></h2>
+                <p class="text-gray-500 leading-relaxed text-xs sm:text-sm">
+                    Aayam Computer Education is one of the leading institutes in Sikar, Rajasthan. We provide quality
+                    education with practical training and career roadmaps to make students fully industry ready.
+                </p>
+                <div class="space-y-2.5 text-xs font-semibold text-gray-600">
+                    <div class="flex items-center space-x-2"><i
+                            class="fa-solid fa-check text-orange-500 bg-white p-1 rounded-full"></i> <span>Experienced &
+                            Certified Faculty</span></div>
+                    <div class="flex items-center space-x-2"><i
+                            class="fa-solid fa-check text-orange-500 bg-white p-1 rounded-full"></i> <span>Practical
+                            Based Learning</span></div>
+                    <div class="flex items-center space-x-2"><i
+                            class="fa-solid fa-check text-orange-500 bg-white p-1 rounded-full"></i> <span>Small Batch
+                            Size Control</span></div>
+                    <div class="flex items-center space-x-2"><i
+                            class="fa-solid fa-check text-orange-500 bg-white p-1 rounded-full"></i> <span>100%
+                            Placement Assistance</span></div>
+                </div>
+
+                <div class="pt-4 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <div class="font-serif italic text-base font-bold tracking-wider text-slate-800">Aayam Joshi
+                        </div>
+                        <div class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Director, Aayam
+                            Computer Education</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 grid grid-cols-1 gap-4">
+                <div
+                    class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex items-center justify-between hover:shadow-md transition">
+                    <div>
+                        <h3 class="text-2xl font-black text-orange-500">10+</h3>
+                        <p class="text-[10px] uppercase font-bold text-gray-500">Years of Excellence</p>
+                    </div>
+                    <i class="fa-solid fa-certificate text-slate-900 text-3xl"></i>
+                </div>
+                <div
+                    class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex items-center justify-between hover:shadow-md transition">
+                    <div>
+                        <h3 class="text-2xl font-black text-orange-500">2500+</h3>
+                        <p class="text-[10px] uppercase font-bold text-gray-500">Students Trained</p>
+                    </div>
+                    <i class="fa-solid fa-users text-slate-900 text-3xl"></i>
+                </div>
+                <div
+                    class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex items-center justify-between hover:shadow-md transition">
+                    <div>
+                        <h3 class="text-2xl font-black text-orange-500">100+</h3>
+                        <p class="text-[10px] uppercase font-bold text-gray-500">Courses Available</p>
+                    </div>
+                    <i class="fa-solid fa-book-open text-slate-900 text-3xl"></i>
+                </div>
+                <div
+                    class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex items-center justify-between hover:shadow-md transition">
+                    <div>
+                        <h3 class="text-2xl font-black text-orange-500">95%</h3>
+                        <p class="text-[10px] uppercase font-bold text-gray-500">Placement Support</p>
+                    </div>
+                    <i class="fa-solid fa-briefcase text-slate-900 text-3xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 px-4 bg-gray-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900">What Our <span class="text-orange-500">Students</span> Say</h2>
+                <div class="w-16 h-1 bg-orange-500 text-white mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- CSS Infinite Marquee -->
+            <div class="marquee-container py-4">
+                <!-- Overlay Gradients for smooth fade effect at borders -->
+                <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+
+                <!-- Track 1 -->
+                <div class="marquee-content">
+                    
+                    <!-- Rohit Sharma -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-[#27272a] text-orange-500 rounded-full flex items-center justify-center font-bold text-xs">RS</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Rohit Sharma</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Great institute with excellent faculty. Practical training helped me a lot in my career mapping."</p>
+                    </div>
+
+                    <!-- Priya Soni -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center font-bold text-xs">PS</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Priya Soni</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"The environment is very good and faculty members are very supportive during doubt execution."</p>
+                    </div>
+
+                    <!-- Aman Verma -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold text-xs">AV</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Aman Verma</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Best computer institute in Sikar. Highly recommended for premium technical certification layers."</p>
+                    </div>
+
+                    <!-- Vikas Kumawat -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-bold text-xs">VK</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Vikas Kumawat</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Highly professional environment. The AutoCAD course is very detailed and the project work gave me the exact skills needed for my civil engineering job."</p>
+                    </div>
+
+                    <!-- Neha Jangid -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xs">NJ</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Neha Jangid</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Learned Web Development from scratch here. The trainers explain everything so easily and the practice sessions are amazing. Highly recommended!"</p>
+                    </div>
+
+                    <!-- Devendra Shekhawat -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold text-xs">DS</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Devendra Shekhawat</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Best computer institute in Sikar for Tally Prime and Advanced Excel. The course content is completely practical and up to date."</p>
+                    </div>
+
+                </div>
+                
+                <!-- Track 2 (Duplicated for infinite looping) -->
+                <div class="marquee-content" aria-hidden="true">
+                    
+                    <!-- Rohit Sharma -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-[#27272a] text-orange-500 rounded-full flex items-center justify-center font-bold text-xs">RS</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Rohit Sharma</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Great institute with excellent faculty. Practical training helped me a lot in my career mapping."</p>
+                    </div>
+
+                    <!-- Priya Soni -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center font-bold text-xs">PS</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Priya Soni</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"The environment is very good and faculty members are very supportive during doubt execution."</p>
+                    </div>
+
+                    <!-- Aman Verma -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold text-xs">AV</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Aman Verma</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Best computer institute in Sikar. Highly recommended for premium technical certification layers."</p>
+                    </div>
+
+                    <!-- Vikas Kumawat -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-bold text-xs">VK</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Vikas Kumawat</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Highly professional environment. The AutoCAD course is very detailed and the project work gave me the exact skills needed for my civil engineering job."</p>
+                    </div>
+
+                    <!-- Neha Jangid -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xs">NJ</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Neha Jangid</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Learned Web Development from scratch here. The trainers explain everything so easily and the practice sessions are amazing. Highly recommended!"</p>
+                    </div>
+
+                    <!-- Devendra Shekhawat -->
+                    <div class="w-[320px] bg-white border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition space-y-4 flex-shrink-0 whitespace-normal mx-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold text-xs">DS</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Devendra Shekhawat</h4>
+                                <div class="text-yellow-400 text-[9px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">"Best computer institute in Sikar for Tally Prime and Advanced Excel. The course content is completely practical and up to date."</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="py-16 px-4 bg-white border-gray-100 shadow-sm hover:shadow-md border-t border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-bold text-slate-900">Our <span class="text-orange-500">Gallery</span></h2>
+                <div class="w-12 h-1 bg-orange-500 text-white mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <!-- Added Images to Gallery -->
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+                <div
+                    class="h-32 rounded-lg overflow-hidden border border-gray-200 shadow-sm relative group cursor-pointer">
+                    <img src="images/gallery_1_1779542178695.png" alt="Lab Batch 1"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                        <span class="text-white text-xs font-bold">Lab Batch 1</span>
+                    </div>
+                </div>
+                <div
+                    class="h-32 rounded-lg overflow-hidden border border-gray-200 shadow-sm relative group cursor-pointer">
+                    <img src="images/gallery_2_1779542197079.png" alt="Coding Practice"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                        <span class="text-white text-xs font-bold">Coding Practice</span>
+                    </div>
+                </div>
+                <div
+                    class="h-32 rounded-lg overflow-hidden border border-gray-200 shadow-sm relative group cursor-pointer">
+                    <img src="images/gallery_3_1779542213056.png" alt="Theory Session"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                        <span class="text-white text-xs font-bold">Theory Session</span>
+                    </div>
+                </div>
+                <div
+                    class="h-32 rounded-lg overflow-hidden border border-gray-200 shadow-sm relative group cursor-pointer">
+                    <img src="images/about_campus_1779542153533.png" alt="Campus"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                        <span class="text-white text-xs font-bold">Campus</span>
+                    </div>
+                </div>
+                <div
+                    class="h-32 rounded-lg overflow-hidden border border-gray-200 shadow-sm relative group cursor-pointer">
+                    <img src="images/hero_bg_1779542137320.png" alt="Facilities"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                        <span class="text-white text-xs font-bold">High Tech Labs</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-gray-500 text-xs pt-16 pb-8 px-4 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+            <div class="space-y-4">
+                <a href="index.html" class="inline-block">
+                    <img src="images/aayam-logo.png" alt="AAYAM Logo" class="h-14 w-auto object-contain">
+                </a>
+                <p class="leading-relaxed">Empowering students with quality education and practical skills for a better
+                    tomorrow.</p>
+                <div class="flex space-x-3.5 text-base text-gray-600">
+                    <a href="#" class="hover:text-orange-500 transition btn-interactive inline-block"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-orange-500 transition btn-interactive inline-block"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-red-500 transition btn-interactive inline-block"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-orange-500 transition btn-interactive inline-block"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 font-semibold">
+                    <li><a href="#" class="hover:text-orange-500 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-500 transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-orange-500 transition">Courses</a></li>
+                    <li><a href="#" class="hover:text-orange-500 transition">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Our Courses</h4>
+                <ul class="space-y-2 font-semibold">
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">AutoCAD (Civil/Architects)</a>
+                    </li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Full Stack Development</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Python Programming</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Graphic Design</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Digital Marketing</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">Tally Prime</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">RS-CIT & MS-Office</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition">DCA & PGDCA</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-3 font-semibold">
+                <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Contact Us</h4>
+                <div class="flex items-center space-x-2"><i class="fa-solid fa-phone text-orange-500"></i>
+                    <span>8104479959</span>
+                </div>
+                <div class="flex items-center space-x-2"><i class="fa-solid fa-envelope text-orange-500"></i>
+                    <span>sahilkhan879sa@gmail.com</span>
+                </div>
+                <div class="flex items-start space-x-2"><i class="fa-solid fa-location-dot text-orange-500 mt-0.5"></i>
+                    <span>indian oil corporation limited, POLO GROUND, Near Vidyashram School, Sikar, Rajasthan
+                        332001</span>
+                </div>
+                <div class="flex items-center space-x-2"><i class="fa-solid fa-clock text-orange-500"></i> <span>Mon -
+                        Sat: 9:00 AM - 7:00 PM</span></div>
+
+                <!-- Fixed Google Map -->
+
+                <div class="mt-4 w-full h-28 rounded overflow-hidden border border-slate-700 shadow-inner">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.09559380905!2d75.1477708761188!3d27.62153922927221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396ca4bc69237451%3A0xab1d7b80bdebedd4!2sAayam%20computer%20education!5e0!3m2!1sen!2sin!4v1716551829671!5m2!1sen!2sin"
+                        class="w-full h-full border-0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between text-[11px] text-gray-500 font-semibold items-center">
+            <p>&copy; 2026 Aayam Computer Education. All Rights Reserved.</p>
+            <div class="space-x-4 mt-2 sm:mt-0">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Whatsapp Floating Icon -->
+    <div
+        class="fixed bottom-5 left-5 bg-emerald-500 text-slate-900 w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-xl cursor-pointer hover:bg-emerald-600 transition-transform transform hover:scale-110 active:scale-95 z-40">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <!-- Modals Section -->
+
+    <!-- Global Enrollment Form Modal -->
+    <div id="enrollModal" class="fixed inset-0 z-[100] flex items-center justify-center hidden">
+        <div class="modal-overlay absolute inset-0 bg-slate-900/80 backdrop-blur-sm cursor-pointer"></div>
+        <div
+            class="modal-content relative bg-white border-gray-100 shadow-sm hover:shadow-md w-[90%] max-w-md rounded-2xl shadow-2xl p-6 sm:p-8 flex flex-col transform scale-95 opacity-0 transition-all duration-300">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-red-500 transition text-xl"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-black text-slate-900 mb-2">Enroll <span class="text-orange-500">Now</span></h2>
+            <p class="text-xs text-gray-500 mb-6">Fill out the form below and our team will contact you shortly.</p>
+
+            <form id="enrollForm" class="space-y-4">
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-600 mb-1">Full Name</label>
+                    <input type="text" name="user_name" required
+                        class="w-full border border-gray-300 bg-white text-slate-900 focus:ring-pink-500 focus:border-orange-500 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-orange-500 outline-none transition"
+                        placeholder="John Doe">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-600 mb-1">Phone Number</label>
+                    <input type="tel" name="user_phone" required
+                        class="w-full border border-gray-300 bg-white text-slate-900 focus:ring-pink-500 focus:border-orange-500 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-orange-500 outline-none transition"
+                        placeholder="+91 XXXXX XXXXX">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-600 mb-1">Email Address</label>
+                    <input type="email" name="user_email" required
+                        class="w-full border border-gray-300 bg-white text-slate-900 focus:ring-pink-500 focus:border-orange-500 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-orange-500 outline-none transition"
+                        placeholder="john@example.com">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-600 mb-1">Course of Interest</label>
+                    <select name="course_interest" required
+                        class="w-full border border-gray-300 bg-white text-slate-900 focus:ring-pink-500 focus:border-orange-500 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-orange-500 outline-none transition bg-white border-gray-100 shadow-sm hover:shadow-md">
+                        <option value="" disabled selected>Select a course</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence & ML</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Full Stack Development">Full Stack Web Development</option>
+                        <option value="Digital Marketing">Digital Marketing & SEO</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="AutoCAD">AutoCAD</option>
+                        <option value="Python">Python Programming</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Tally">Tally Prime</option>
+                        <option value="DCA">DCA</option>
+                        <option value="App Development">Mobile App Development</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" id="enrollSubmitBtn"
+                    class="w-full bg-orange-500 hover:bg-orange-600 text-white shadow-md font-bold py-3 rounded-lg transition shadow-lg mt-2 flex justify-center items-center">
+                    <span>Submit Form</span>
+                    <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                </button>
+                <div id="formFeedback" class="text-xs text-center font-bold hidden"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dynamic Course Details Modal -->
+    <div id="courseModal" class="fixed inset-0 z-[100] flex items-center justify-center hidden">
+        <div class="modal-overlay absolute inset-0 bg-slate-900/80 backdrop-blur-sm cursor-pointer"></div>
+        <div
+            class="modal-content relative bg-white border-gray-100 shadow-sm hover:shadow-md w-[90%] max-w-lg rounded-2xl shadow-2xl p-0 flex flex-col transform scale-95 opacity-0 transition-all duration-300 overflow-hidden">
+            <button
+                class="modal-close absolute top-4 right-4 text-slate-900 hover:text-red-300 z-10 transition text-xl bg-black/20 rounded-full w-8 h-8 flex items-center justify-center"><i
+                    class="fa-solid fa-xmark"></i></button>
+
+            <div id="courseModalHeader"
+                class="h-32 bg-orange-500 text-white flex items-center justify-center text-slate-900 text-5xl relative">
+                <!-- Icon will be injected here -->
+                <i class="fa-solid fa-book"></i>
+            </div>
+
+            <div class="p-6 sm:p-8">
+                <h2 id="courseModalTitle" class="text-2xl font-black text-slate-900 mb-1">Course Title</h2>
+                <div class="flex space-x-4 mb-4 text-xs font-bold text-gray-500">
+                    <span class="bg-gray-100 px-2 py-1 rounded"><i class="fa-regular fa-clock text-orange-500 mr-1"></i>
+                        <span id="courseModalDuration">3 Months</span></span>
+                    <span class="bg-gray-100 px-2 py-1 rounded"><i
+                            class="fa-solid fa-certificate text-orange-500 mr-1"></i> Certification</span>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 border-b pb-1 mb-2">Syllabus Overview</h4>
+                        <ul id="courseModalSyllabus" class="text-xs text-gray-500 space-y-1.5 list-disc pl-4">
+                            <!-- Dynamic Syllabus -->
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 border-b pb-1 mb-2">Career Options</h4>
+                        <p id="courseModalCareer" class="text-xs text-gray-500 leading-relaxed">
+                            <!-- Dynamic Career -->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <button
+                        class="enroll-trigger-from-course w-full bg-orange-500 hover:bg-orange-600 text-white shadow-md font-bold py-3 rounded-lg transition shadow-lg flex justify-center items-center group">
+                        <span>Enroll in this Course</span>
+                        <i
+                            class="fa-solid fa-arrow-right ml-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function switchPlaygroundTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            // Remove active classes from all tab buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-slate-800', 'text-orange-400', 'border', 'border-slate-700');
+                btn.classList.add('text-slate-400');
+            });
+
+            // Show current tab content
+            document.getElementById('content-' + tabId).classList.remove('hidden');
+
+            // Set current tab button active
+            const activeBtn = document.getElementById('tab-' + tabId);
+            activeBtn.classList.remove('text-slate-400');
+            activeBtn.classList.add('bg-slate-800', 'text-orange-400', 'border', 'border-slate-700');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

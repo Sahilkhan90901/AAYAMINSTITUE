@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - Aayam Computer Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <header class="bg-[#061329] text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center shrink-0">
+                    <img src="images/aayam-logo.png" alt="AAYAM Logo" class="h-12 w-auto object-contain">
+                </a>
+                <div
+                    class="text-[10px] uppercase tracking-widest font-bold leading-tight hidden sm:block border-l border-gray-700 pl-3">
+                    Computer<br><span class="text-blue-400">Education</span>
+                </div>
+            </div>
+
+            <button id="mobile-menu-toggle" class="md:hidden text-slate-900 hover:text-white p-2 rounded-lg transition"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-white transition">About</a>
+                <a href="courses.html" class="text-blue-400 border-b-2 border-blue-400 pb-1">Courses</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-3">
+                <button class="text-slate-700 hover:text-orange-500 p-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button
+                    class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded text-sm font-bold transition btn-interactive">Apply
+                    Now</button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden border-t border-slate-700 bg-[#061329]/95 backdrop-blur-sm">
+            <div class="max-w-7xl mx-auto px-4 py-4 space-y-4">
+                <nav class="grid gap-3 text-sm font-semibold">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="courses.html" class="text-white transition">Courses</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <section class="mb-12 text-center">
+            <span
+                class="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-blue-600">Catalog</span>
+            <h1 class="mt-4 text-4xl font-extrabold text-slate-900">Professional courses for every career stage</h1>
+        </section>
+
+        <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-red-50 text-red-500 rounded-xl flex items-center justify-center text-3xl font-black mb-4">
+                        <i class="fa-solid fa-compass-drafting mr-2"></i> AutoCAD
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">AutoCAD for Civil/Mech</h3>
+                    <p class="text-xs text-gray-600 mt-1">Master 2D and 3D industrial blueprints drafting
+                        configurations.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="autocad">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-5xl mb-4">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Python Programming</h3>
+                    <p class="text-xs text-gray-600 mt-1">Learn core object-oriented structures, logic coding, and
+                        script automation workflow.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="python">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-3xl font-mono font-bold mb-4">
+                        MERN Stack</div>
+                    <h3 class="font-bold text-lg text-slate-950">Full-Stack Web Development</h3>
+                    <p class="text-xs text-gray-600 mt-1">Build responsive server systems using React.js, Node.js, and
+                        MongoDB databases.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="fullstack">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Graphic Designing</h3>
+                    <p class="text-xs text-gray-600 mt-1">Generate high-impact creative vectors using Adobe Photoshop,
+                        Illustrator, and CorelDRAW.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="graphic">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Tally Prime & Accounting</h3>
+                    <p class="text-xs text-gray-600 mt-1">Master balance sheets, voucher entry entries, GST filing
+                        systems, and taxation audits.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="tally">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-slate-100 text-slate-700 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">DCA Diploma Course</h3>
+                    <p class="text-xs text-gray-600 mt-1">Complete computing foundations certification tracking Windows
+                        assets and MS Office suites.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="dca">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <!-- Artificial Intelligence & ML -->
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Artificial Intelligence & ML</h3>
+                    <p class="text-xs text-gray-600 mt-1">Focuses on creating intelligent systems, robotics, and complex
+                        natural language processing models.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="ai">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <!-- Data Science & Analytics -->
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Data Science & Analytics</h3>
+                    <p class="text-xs text-gray-600 mt-1">Extract insights from datasets to drive business decisions and
+                        analytical modeling.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="data_science">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <!-- Cloud Computing -->
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div class="h-28 bg-sky-50 text-sky-600 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Cloud Computing (AWS/Azure)</h3>
+                    <p class="text-xs text-gray-600 mt-1">Manage and architect scalable infrastructure on platforms like
+                        AWS or Azure.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="cloud">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <!-- Digital Marketing & SEO -->
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Digital Marketing & SEO</h3>
+                    <p class="text-xs text-gray-600 mt-1">Focuses on SEO strategies, social media execution, and online
+                        brand management.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="marketing">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <!-- UI/UX Design -->
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">UI/UX Design</h3>
+                    <p class="text-xs text-gray-600 mt-1">Blends visual creativity with technology to design
+                        user-friendly interfaces.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="uiux">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <!-- Web Design Fundamentals -->
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-cyan-50 text-cyan-600 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Web Design Fundamentals</h3>
+                    <p class="text-xs text-gray-600 mt-1">Create beautiful & responsive websites seamlessly using HTML,
+                        CSS and JS basics.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="webdesign">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+
+            <!-- Mobile App Development -->
+            <article class="bg-white rounded-2xl shadow border p-5 flex flex-col justify-between group">
+                <div>
+                    <div
+                        class="h-28 bg-zinc-100 text-zinc-700 rounded-xl flex items-center justify-center text-4xl mb-4">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-950">Mobile App Development</h3>
+                    <p class="text-xs text-gray-600 mt-1">Build Android & iOS application infrastructures using modern
+                        frameworks.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <button
+                        class="view-details-btn bg-slate-100 hover:bg-slate-200 font-bold text-xs py-2.5 rounded-xl transition"
+                        data-course="appdev">Details</button>
+                    <button
+                        class="enroll-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2.5 rounded-xl transition">Enroll
+                        Now</button>
+                </div>
+            </article>
+        </section>
+
+        <div
+            class="mt-16 bg-blue-50/80 border border-blue-200 rounded-3xl p-8 sm:p-10 text-center shadow-sm max-w-4xl mx-auto">
+            <div
+                class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-5 shadow-inner">
+                <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 mb-2">Looking for other specific courses?</h3>
+            <p class="text-base text-gray-600 mb-6 font-medium">For more courses details and personalized career
+                guidance, feel free to contact us.</p>
+            <a href="contact.html"
+                class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3.5 rounded-xl transition shadow-lg btn-interactive">
+                Contact Us Now <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+            </a>
+        </div>
+    </main>
+
+    <div id="enrollModal" class="fixed inset-0 z-[100] flex items-center justify-center hidden">
+        <div class="modal-overlay absolute inset-0 bg-slate-900/80 backdrop-blur-sm cursor-pointer"></div>
+        <div
+            class="modal-content relative bg-white w-[90%] max-w-md rounded-2xl shadow-2xl p-6 sm:p-8 flex flex-col transform scale-95 opacity-0 transition-all duration-300">
+            <button class="modal-close absolute top-4 right-4 text-gray-400 hover:text-red-500 text-xl"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-black text-slate-900 mb-2">Enroll <span class="text-blue-600">Now</span></h2>
+            <form id="enrollForm" class="space-y-4">
+                <input type="text" name="user_name" required class="w-full border p-2.5 rounded-lg text-sm"
+                    placeholder="Full Name">
+                <input type="tel" name="user_phone" required class="w-full border p-2.5 rounded-lg text-sm"
+                    placeholder="Phone Number">
+                <input type="email" name="user_email" required class="w-full border p-2.5 rounded-lg text-sm"
+                    placeholder="Email Address">
+                <select name="course_interest" required class="w-full border p-2.5 rounded-lg text-sm bg-white">
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence & ML</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Full Stack Development">Full Stack Web Development</option>
+                    <option value="Digital Marketing">Digital Marketing & SEO</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="AutoCAD">AutoCAD</option>
+                    <option value="Python">Python Programming</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="Tally">Tally Prime</option>
+                    <option value="DCA">DCA</option>
+                    <option value="App Development">Mobile App Development</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="submit" id="enrollSubmitBtn"
+                    class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg transition shadow-lg mt-2">Submit
+                    Form</button>
+                <div id="formFeedback" class="text-xs text-center font-bold hidden"></div>
+            </form>
+        </div>
+    </div>
+
+    <div id="courseModal" class="fixed inset-0 z-[100] flex items-center justify-center hidden">
+        <div class="modal-overlay absolute inset-0 bg-slate-900/80 backdrop-blur-sm cursor-pointer"></div>
+        <div
+            class="modal-content relative bg-white w-[90%] max-w-lg rounded-2xl shadow-2xl p-0 flex flex-col transform scale-95 opacity-0 transition-all duration-300 overflow-hidden">
+            <button
+                class="modal-close absolute top-4 right-4 text-white hover:text-red-300 z-10 text-xl bg-black/20 rounded-full w-8 h-8 flex items-center justify-center"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div id="courseModalHeader"
+                class="h-32 bg-blue-600 flex items-center justify-center text-white text-5xl relative"></div>
+            <div class="p-6 sm:p-8">
+                <h2 id="courseModalTitle" class="text-2xl font-black text-slate-900 mb-1">Course Title</h2>
+                <div class="mb-4 text-xs font-bold text-gray-500"><span class="bg-gray-100 px-2 py-1 rounded"><i
+                            class="fa-regular fa-clock text-blue-600 mr-1"></i> Duration: <span
+                            id="courseModalDuration"></span></span></div>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 border-b pb-1 mb-2">Syllabus Highlights</h4>
+                        <ul id="courseModalSyllabus" class="text-xs text-gray-600 space-y-1.5 list-disc pl-4"></ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 border-b pb-1 mb-2">Career Outlook</h4>
+                        <p id="courseModalCareer" class="text-xs text-gray-600 leading-relaxed"></p>
+                    </div>
+                </div>
+                <button
+                    class="enroll-trigger-from-course w-full bg-blue-600 text-white font-bold py-3 rounded-lg transition shadow-lg mt-6">Enroll
+                    in this Course</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
